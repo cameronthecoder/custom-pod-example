@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<breeze-manifest version="1.0" xmlns="http://breeze.macromedia.com/ns/breeze-manifest" generator="ZB">
+	<document type="custom-pod" id="com.example.custompodexample" version="1.0.001" minimumConnectMobileVersion="2.4" minimumSDKversion="9.4.002" minimumConnectServerVersion="9.4.2"/>
+	<assets>
+		<asset type="document-view">
+			<entry href="CustomPod.swf" href-swf="CustomPod.swf" href-html5="CustomPod_html5.htm" />
+			<file href="CustomPod.swf"/>
+			<file href="CustomPod_html5.htm"/>
+			<file href="lib/"/>
+			<file href="lib/connect_customPodSDK.js"/>
+            <file href="js/"/>
+            <file href="js/main.js"/>
+            <file href="css/" />
+            <file href="css/styles.css"/>
+		</asset>
+	</assets>
+</breeze-manifest>
