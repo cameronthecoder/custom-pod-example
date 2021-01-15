@@ -20,13 +20,13 @@ if (cpu) {
 		alert.innerHTML = "Message received: " + event.msgVal + " (Event name: <code>" + event.msgNm + "</code>)";
 		alert.style.display = "block";
 	}
-	
+
 	cpu.init(
 		onConfigured, 
 		"com.example.custompodexample",
 		"9.5.001",
 		"connectsdkhook"
-		);
+	);
 
 	// Allow participants to send a message event
 	cpu.allowParticipantPublish("message", true);
