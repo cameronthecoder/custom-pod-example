@@ -1,4 +1,5 @@
 # Adobe Connect Custom Pod Example
+![A screenshot of the custom pod](screenshot.png?raw=true)
 This a custom pod for Adobe Connect that will send a message to everyone except yourself, so you will need 2 people to test this properly. Feel free to fork it and play around with it!
 
 # Usage
@@ -15,7 +16,8 @@ To use this custom pod in an Adobe Connect room, follow these steps:
 - If you add a new dependency or file, you need to add it to the XML file as shown below:
 	```xml
 	<asset type="document-view">
-	<file href="MyNewFile.js"/>
+		<!-- ... -->
+		<file href="MyNewFile.js"/>
 	</asset>
 	```
 
