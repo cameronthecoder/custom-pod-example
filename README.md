@@ -1,6 +1,7 @@
 # Adobe Connect Custom Pod Example
 ![A screenshot of the custom pod](screenshot.png?raw=true)
-This a custom pod for Adobe Connect that will send a message to everyone except yourself, so you will need 2 people to test this properly. Feel free to fork it and play around with it!
+
+This a custom pod for Adobe Connect that allows you to broadcast a message to all of the people in the room. Feel free to fork it and play around with it!
 
 # Usage
 To use this custom pod in an Adobe Connect room, follow these steps:

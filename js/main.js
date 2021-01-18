@@ -16,13 +16,19 @@ if (cpu) {
     // event.msgNm = name of message
     // event.msgVal = value of message
 
-    alert.innerHTML =
-      "Message received: " +
-      event.msgVal +
-      " (Event name: <code>" +
-      event.msgNm +
-      "</code>)";
-    alert.style.display = "block";
+
+    // check if the event name is message and if it is, update the HTML
+    // this event name comes from the cpu.dispatchSyncMessage() method from below which takes in
+    // an event name as its first parameter
+    if (event.msgNm == "message") {
+	    alert.innerHTML =
+	      "Message received: " +
+	      event.msgVal +
+	      " (Event name: <code>" +
+	      event.msgNm +
+	      "</code>)";
+	    alert.style.display = "block";
+  	}
   };
 
   cpu.init(
@@ -48,8 +54,8 @@ if (cpu) {
     alert.innerText = "Message sent!";
     alert.style.display = "block";
 
-    // send a message to all of the people in the room except yourself
-    // input.value is the value of the message
+    // send a message to all of the people in the room
+    // the first parameter is the event name, in this case it is message
     cpu.dispatchSyncMessage("message", input.value, false, false);
   });
 }
